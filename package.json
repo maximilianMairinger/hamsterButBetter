@@ -1,0 +1,59 @@
+{
+    "name": "hamster-but-good",
+    "version": "1.0.0",
+    "description": "Hamster but good",
+    "main": "native.js",
+    "scripts": {
+        "build": "webpack --config webpack.prod.config.js --display-modules",
+        "build-electron": "webpack --config webpack.prod.electron.config.js --display-modules && electron-builder -mw",
+        "dev": "webpack --config webpack.dev.config.js",
+        "server": "node server",
+        "bos": "webpack --config webpack.bos.config.js",
+        "test": "webpack --config webpack.test.config.js",
+        "start": "electron .",
+        "test-server": "nodemon server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Logfro/LB-Planer-frontend.git"
+    },
+    "author": "Maximilian Mairinger",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Logfro/LB-Planer-frontend/issues"
+    },
+    "homepage": "https://github.com/Logfro/LB-Planer-frontend#readme",
+    "devDependencies": {
+        "@types/node": "^13.7.0",
+        "body-parser": "^1.19.0",
+        "css-loader": "^3.4.2",
+        "cssnano": "^4.1.8",
+        "express": "^4.17.1",
+        "express-sse": "^0.5.1",
+        "express-ws": "^4.0.0",
+        "nodemon": "^2.0.2",
+        "postcss-loader": "^3.0.0",
+        "pug": "^2.0.4",
+        "pug-html-loader": "^1.1.5",
+        "pug-loader": "^2.4.0",
+        "raw-loader": "^4.0.0",
+        "terser-webpack-plugin": "^2.3.4",
+        "to-string-loader": "^1.1.5",
+        "ts-loader": "^6.2.1",
+        "typescript": "^3.6.3",
+        "url-loader": "^3.0.0",
+        "webpack": "^4.41.0",
+        "webpack-cli": "^3.3.9",
+        "webpack-inject-plugin": "^1.5.3",
+        "webpack-merge": "^4.2.2"
+    },
+    "dependencies": {
+        "ajaon": "^1.1.1",
+        "delay": "^4.3.0",
+        "extended-dom": "^3.0.6",
+        "fast-decode-uri-component": "^1.0.1",
+        "front-db": "^1.1.10",
+        "get-base-url": "^1.0.1",
+        "xrray": "^4.6.4"
+    }
+}
